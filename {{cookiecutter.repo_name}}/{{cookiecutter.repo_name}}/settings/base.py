@@ -187,3 +187,7 @@ WAGTAILSEARCH_BACKENDS = {
 # Wagtail settings
 
 WAGTAIL_SITE_NAME = "{{ cookiecutter.project_name }}"
+
+
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
